@@ -18,14 +18,14 @@
     "href": "life-gdp.html",
     "title": "Life Expectancy and GDP per Capita",
     "section": "",
-    "text": "Exploring the relationship between life expectancy and GDP per capita across countries!\nimport pandas as pd import matplotlib.pyplot as plt\ndf = pd.read_csv(“gapminder.csv”)\nplt.scatter(df[“gdp_per_capita”], df[“life_expectancy”], alpha=0.5) plt.xlabel(“GDP per Capita”) plt.ylabel(“Life Expectancy”) plt.title(“Life Expectancy vs GDP per Capita”) plt.show()"
+    "text": "Exploring the relationship between life expectancy and GDP per capita across countries!\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\ndf = pd.read_csv(\"gapminder.csv\")\n\nplt.scatter(df[\"gdp_per_capita\"], df[\"life_expectancy\"], alpha=0.5)\nplt.xlabel(\"GDP per Capita\")\nplt.ylabel(\"Life Expectancy\")\nplt.title(\"Life Expectancy vs GDP per Capita\")\nplt.show()"
   },
   {
     "objectID": "country.html",
     "href": "country.html",
     "title": "Country Analysis: India",
     "section": "",
-    "text": "Analyzing how life expectancy, GDP per capita, and population change over time in India.\nimport pandas as pd import matplotlib.pyplot as plt\ndf = pd.read_csv(“gapminder.csv”)\ncountry = “India” country_df = df[df[“country”] == country]\nplt.plot(country_df[“year”], country_df[“life_expectancy”], marker=‘o’, label=“Life Expectancy”) plt.plot(country_df[“year”], country_df[“gdp_per_capita”], marker=‘o’, label=“GDP per Capita”) plt.plot(country_df[“year”], country_df[“population_millions”], marker=‘o’, label=“Population (millions)”)\nplt.xlabel(“Year”) plt.title(f”Trends in {country}“) plt.legend() plt.grid(True) plt.show()"
+    "text": "Analyzing how life expectancy, GDP per capita, and population change over time in India.\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\ndf = pd.read_csv(\"gapminder.csv\")\n\ncountry = \"India\"\ncountry_df = df[df[\"country\"] == country]\n\nplt.plot(country_df[\"year\"], country_df[\"life_expectancy\"], marker='o', label=\"Life Expectancy\")\nplt.plot(country_df[\"year\"], country_df[\"gdp_per_capita\"], marker='o', label=\"GDP per Capita\")\nplt.plot(country_df[\"year\"], country_df[\"population_millions\"], marker='o', label=\"Population (millions)\")\n\nplt.xlabel(\"Year\")\nplt.title(f\"Trends in {country}\")\nplt.legend()\nplt.grid(True)\nplt.show()"
   },
   {
     "objectID": "index.html",
@@ -40,5 +40,12 @@
     "title": "Gapminder Data Overview",
     "section": "Website Pages",
     "text": "Website Pages\n\nLife Expectancy and GDP per Capita\nLife Expectancy and Population\nCountry Analysis"
+  },
+  {
+    "objectID": "life-population.html",
+    "href": "life-population.html",
+    "title": "Life Expectancy and Population",
+    "section": "",
+    "text": "Exploring the relationship between population size and life expectancy!\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\ndf = pd.read_csv(\"gapminder.csv\")\n\nplt.scatter(df[\"population_millions\"], df[\"life_expectancy\"], alpha=0.5)\nplt.xlabel(\"Population (millions)\")\nplt.ylabel(\"Life Expectancy\")\nplt.title(\"Life Expectancy vs Population\")\nplt.show()"
   }
 ]
