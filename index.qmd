@@ -1,0 +1,10 @@
+---
+title: "Gapminder Data Overview"
+---
+
+The Gapminder dataset contains information and relationships on life expectancy, GDP per capita, and population for countries around the world.
+
+## Website Pages
+- [Life Expectancy and GDP per Capita](life-gdp.qmd)
+- [Life Expectancy and Population](life-population.qmd)
+- [Country Analysis](country.qmd)
